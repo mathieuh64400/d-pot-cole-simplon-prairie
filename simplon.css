@@ -1,0 +1,617 @@
+body
+{
+margin: 0;
+padding: 0;
+background-image: url(https://image.freepik.com/photos-gratuite/fond-sable-fin_23-2147670172.jpg);
+background-size: cover;
+}
+#page{ font-family: Arial, Helvetica, sans-sérif;
+       width:1400px;
+       height: 800px; 
+       margin:0;
+       padding: 0;
+       color: black;
+       } 
+   
+@media screen and (min-width:432px) and (max-width: 768px)
+{
+    #page{ width:(500px); } 
+}
+
+@media screen and (min-width:432px) and (max-width: 768px)
+{ header{width:300px;
+         height:400px;
+        margin:0;}
+.morg{display :none;
+}}
+@media screen and (min-width:432px) and (max-width: 768px){
+  .information{ margin-left:0;
+               transform: none;
+              text-align:left;}
+}
+@media screen and(min-width:432x) and (max-width:768px) {
+  article div{ width: 50px;
+              margin:0;}
+   h1{ font-size: x-small;
+  margin: 0;}
+   .garbure{display:none;
+  text-align: left; }
+   .garbure:hover{ transform: none;}
+   .corps{ text-align: left;
+          font-size: xx-small;
+          -webkit-column: 1;
+        border: 2px black;
+        overflow: hidden;
+        margin: 0;
+         }}
+  
+@media screen and(min-width:432px) and (max-width:768px)
+{.slider{ width: 100px;
+          margin:auto;}
+  .slides{ width: 500px;}
+    }
+ @media screen and (min-width:432px)and (max-width:768px)
+{ footer{width:auto;
+         text-align: left;
+        font-size: x-small; }}
+/*header débute ici*/
+
+
+header{ width: 1150px;
+  height: 180px;
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png);
+  margin: 50px auto;  }
+       
+ header h1{ text-align: center;
+           font-size: x-large;
+           font-family: Arial, Helvetica, sans-serif;
+           font-style: bold;
+         padding-bottom: 50px;
+         text-decoration: underline;
+          margin-left:330px;}
+                  
+.morg{display: block;
+      text-align: right;
+      margin-left:auto;
+       float:right;
+       border:none;
+      width: 350px;
+      height:250px;}
+
+.lang{ display: block;
+       text-align:left;
+       margin: 10px;}
+
+
+/*header finit ici*/
+/* nav débute ici*/
+
+
+nav
+{
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    text-align: center;
+}
+#menu {
+  padding:0;
+  margin:0;
+  list-style:none;
+  width: 180px;
+}
+#menu ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+ 
+}
+#menu li {
+   background-color:#729EBF; 
+   background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+   background-image: linear-gradient(to bottom, #729EBF 0%, 333A40 100%);
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #999;
+   border:solid 1px #333A40,
+}
+#menu li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0;
+}
+#menu a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: Arial;
+  font-size:1.2em;
+}
+#menu ul li a, #menu li:hover li a {
+  font-size:1em;
+}
+#menu li:hover {
+   background: #729EBF;
+}
+#menu li li:hover {
+   background: #999;
+}
+#menu ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#menu li:hover li {
+  max-height: 15em;
+}
+
+/*section débute ici*/
+
+section
+{   display: inline-block;   
+    vertical-align: top;
+}
+/*iformation débute ici*/
+
+.information
+{
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;  
+    padding: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.information:hover
+{
+   transform: translateX(1000px) scale(1.5); 
+   background-color: red;
+}
+/*article*/
+
+article div{border: 2px double black;
+            box-shadow: 6px 6px 0px black;
+            width: 1200px;
+            margin: auto;
+            padding: auto;
+            overflow: hidden;}
+
+        h1{ text-decoration: underline;
+             font-weight:bold; 
+             font-size: medium;
+              text-align:center; 
+              margin-bottom: 20px; }
+
+.garbure{float:center;}
+.garbure:hover{ transform: scale(2); }
+.dessous{clear:both;}
+
+.corp{text-align: center;
+	   padding: auto;
+       font-size:small;
+       margin-top: 20px;
+          -webkit-columns: 4 100px; 
+    }
+/*slide*/
+
+ 
+.slider{width:300px;
+        overflow: hidden;
+        margin:150px auto;}
+.slides{width: 2000px;
+        animation: glisse 20s infinite; }
+.slide{ float:left;}
+@-webkit-keyframes glisse {
+	0%{ transform: translateX(0);}
+	25%{transform: translateX(-250px);}
+	50%{ transform: translateX(-500px); }
+	75% {transform: translateX(-750px);}
+	100%{transform: translateX(0);}
+}
+
+
+footer{ width: 1200px;
+        margin: auto;
+        text-align: center;
+        font-size:large;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png); }
+     
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*page2*/
+
+
+section
+{   display:inline-block;   
+    vertical-align: top;
+}
+
+
+.chef{display: inline-block;
+	    margin:auto;
+	    width: 500px;
+      height:500px;
+      border:none;
+     -webkit-border-radius: 250px;
+      }
+  
+
+#mots{text-align: center;
+    border: 0.1px double, black;
+     margin-top: inherit;
+    }
+.f{ text-align: center;
+    font-size: x-large;}
+
+#mots  h1{ text-align: center; 
+         font-size: x-large;
+         font-family: Arial, Helvetica, sans-sérif;
+         font-weight: bold;
+            padding: auto; }
+
+ #mots p{ text-align: center;
+         font-size: medium; }
+
+#mang1, #mang2{ border: 2px double black;
+               text-align:center;
+               font-family: Arial, Helvetica, sans-serif;
+               font-size: medium; }
+
+.cite{  font-family:Vladimir Script; 
+         font-size: x-large;
+         color: maroon;
+         opacity: 0,9;
+        padding: inherit;}
+
+#A{ text-align:center;
+   	   font-size: medium;
+   	   margin: 250px auto;
+   	   padding: auto; }
+
+#A h1{ font-weight:bold italic; }
+
+#B{ text-align:center;
+   	   font-size: medium;
+   	   margin: 250px auto;
+          padding: auto; }
+          
+.recette{ display: block;
+	  margin-right: auto;
+      margin-left: 280px;
+    text-align: right; }
+
+#pljr{ list-style: none; }
+
+.trui{  background-color: yellowgreen;
+       text-align: center;
+       font-size: medium;}
+
+.trui:hover{ transform: scale(1.5);}
+
+.gigot{background-color: orange;
+text-align: center;
+font-size: medium;  }
+
+.gigot:hover{transform: scale(1.5);}
+
+.magret{ background-color: palegreen;
+        text-align: center;
+        font-size: medium;}
+
+.magret:hover{transform: scale(1.5);}
+
+.palombe{  background-color: yellowgreen;
+    text-align: center;
+    font-size: medium}
+
+.Palombe:hover{ transform: scale(1.5);}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------*/
+/*page3*/
+
+section
+{   display:inline-block;   
+    vertical-align: top;
+    margin-left: 200px;
+}
+
+.wine{ display:block;
+      text-align: right;
+         margin: auto;}
+.wine:hover{ transform: scale(5);}
+.vlebearn{ margin-top:250 px;}
+
+ #Vgn h1,#Vgn h2{ text-align: center;
+              font-size: x-large;
+              font-family:Arial,Helvetica, sans-serif;
+              margin: auto;
+              padding: auto; 
+              text-decoration: underline;}
+#Vgn td{ color: maroon;}
+
+.pddev{display: inline-block;
+                margin:auto;
+                width: 500px;
+                height:500px;
+                border:none;
+               -webkit-border-radius: 250px;
+                }
+
+
+/*-----------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+section
+{   display:inline-block;   
+    vertical-align: top;
+    margin-left: 200px;
+}
+
+.cad{ display: block;
+     text-align: right; }
+
+h1,h2{ font-size: xx-large;
+       font-weight: bold underline;
+       text-align: center;
+       margin-left: 200px auto; }
+
+.off{font-size: xx-large;
+     font-weight: bold underline;
+     text-align: center;
+     margin-left: 200px auto; }
+
+.lo{ 
+    width: 500px;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; 
+    text-align: center; 
+}
+
+.lo:hover
+{
+   transform:  scale(1.5); 
+   background-color: pink;
+ }
+
+.G{ 
+    width: 500px;
+    height:100px;
+    margin: auto;
+    background-color: blue;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    text-align: center;
+   }
+  .G:hover
+{
+   transform: scale(1.5); 
+   background-color: orange;
+ }
+
+.Sur{width:500px;
+    height:100px;
+    background-color: blue;
+    margin: auto;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    text-align: center; }
+
+.Sur:hover{
+   transform: scale(1.5); 
+   background-color: orange;}
+
+ .Pla { width: 500px;
+    	height:100px;
+   		background-color: blue;
+   		margin: auto;
+    	transition-property: transform;
+    	transition-duration: 1s;
+    	transition-timing-function: ease-in-out; 
+    	text-align: center;}
+
+.Pla:hover{transform: scale(1.5); 
+              background-color: red;} 
+
+.choix{background: repeating-radial-gradient(farthest-side ellipse at center, blue, white, red 80px);
+	   text-align: center;
+	   border: 2px double black;
+	   margin: auto;
+	   padding: auto;}
+
+/*page 5*/
+
+
+section
+{   display:inline-block;   
+    vertical-align: top;
+    margin-left: 200px;
+}
+
+.titre{ font-size: xx-large;
+        font-weight: bold underline;
+        text-align: center;
+        margin-left: 200px; }
+
+p+.titre{font-size: medium;
+         color: gold;
+          margin-left:150px;
+          font-family: Vladimir Script; }
+
+.fomul{ object-position: 300px 100px;
+        border: 2px double black;
+        box-shadow: 2px 2px 2px 0;
+        display: block;
+        text-align: center;
+        margin: auto;
+         background-color: yellow; }
+
+/*Page 6*/
+
+
+section{display:inline-block;   
+    vertical-align: top;
+    margin-left: 200px;
+}
+
+.béarn{ display: block;
+     text-align: right;
+      border: 2px solid black;
+       }
+.béarn:hover{ transform: scale(2);}
+
+#rens{ font-size: x-large;
+       font-family: Arial,Helvetica,sans-serif;
+       font-weight: bold;
+       margin: 150px auto;
+       text-align: center; }
+
+.rens{ font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+       margin:auto;
+       padding: auto; }
+
+/*page 7*/
+nav
+{
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+}
+/*formulaire début*/
+.inf{
+	width: 460px;
+	font-size: 16px;
+	background:gold;
+	padding: 30px 30px 15px 30px;
+	border: 5px solid black;
+}
+.inf input[type=submit],
+.inf input[type=button],
+.inf input[type=text],
+.inf input[type=email],
+.inf  textarea,
+.inf  label
+{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 16px;
+	color: red;
+
+}
+.inf label {
+	display:block;
+	margin-bottom: 10px;
+}
+.inf  label > span{
+	display: inline-block;
+	float: left;
+	width: 150px;
+}
+.inf input[type=text],
+.inf input[type=email] 
+{
+	background: red;
+	border: 5px;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+
+.inf input[type=text]:valid,
+.inf input[type=email]:valid { color: green; }
+
+.inf input[type=text]:invalid,
+.inf input[type=email]:invalid { color: red; }
+
+
+.inf textarea{
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	overflow: hidden;
+	resize:none;
+	height:20px;
+}
+
+.inf textarea:focus, 
+.inf input[type=text]:focus,
+.inf input[type=email]:focus,
+.inf input[type=email] :focus
+{
+	border-bottom: 1px dashed ;
+}
+
+.inf input[type=submit],
+.inf input[type=button]{
+	background: red;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: black;
+}
+.inf input[type=submit]:hover,
+.inf input[type=button]:hover{
+background: rgba(187, 5, 5, 0.884);
+}
+/*formuliaire fin*/
+.rappel{ width:200px;
+        margin: auto;
+        text-align: center;
+        font-size:medium;
+          }
+.remplir{ font-size: x-large;
+          font-weight:bold;}
+
+.gps { display: block;
+        margin-right: auto;
+        margin-left: 240px;
+        margin-top: 10px;
+         width: 200px;
+         height: 200px;
+         border:2px solid black;
+        }
+ .gps:hover {transform: scale(1.5); }
+
+ .supp
+{
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;  
+    padding: auto;
+    margin-left: 5px;
+}
+
+.supp:hover{ transform: scale(1.5) translateX(500px);
+              background-color:gold; }
+
+
+.service { width: 700px;
+         margin: auto;
+          text-align: center;
+          font-size:x-large;}

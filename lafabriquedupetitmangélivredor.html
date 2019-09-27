@@ -1,0 +1,103 @@
+<DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title> Menu </title>
+    </head>
+    <link rel="stylesheet"  href="simplon.css">
+    <script LANGUAGE="JavaScript" type="text/javascript">
+     function display() {
+              DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+              message = "<ul><li><b>NOM: </b>" + document.livredor.c1.value;
+              message += "<li><b>e-MAIL: </b>" + document.livredor.c2.value;
+              message += "<li><b>COMMENTAIRE: </b>" + document.livredor.c3.value + "</ul>";
+              DispWin.document.write(message);
+            }
+    </script>
+    <body>
+    	<div id="Page">
+            <header>
+                  <img src="https://lepetitjournal.com/sites/default/files/styles/main_article/public/2019-03/VegNewsGordonRamsay3.png?itok=97yLf3tv"class="morg">	 
+                  <h1> <strong>Mister Cuistot  <br>
+                  - la Fabrique du petit mangé-</strong></h1>
+
+    					<label for="Langue"> Langue:</label>
+    					<select name="pays" id="pays">
+    					<option value="Français"> Français</option>
+    					<option value="Anglais">Anglais</option>
+    					</select>        
+    				</p>
+
+    		 </header>
+
+<ul id="menu">
+   <li><a href="#">Acceuil</a> </li>
+   <li><a href="#">Menu</a>
+        <ul>
+                <li><a href="#"> </a></li>
+                <li><a href="#"> le chef</a></li>
+                <li><a href="#"> la recette</a></li>
+                <li><a href="#"> les plats du jour</a></li>
+             </ul>
+</li>
+    <li><a href="#"> Carte des Vins</a>
+      <ul>
+         <li><a href="#"> Jurançon</a></li>
+         <li><a href="#"> Madiran</a></li>
+         <li><a href="#"> Bellocq</a></li>
+         <li><a href="#"> Vin des Sables</a></li>
+      </ul>
+   </li>
+  	<li><a href="#">Coffrets cadeaux</a> </li>
+   <li><a href="#"> Livre d'Or</a> </li>
+   <li><a href="#">Nos partenaires</a> </li>
+    <li> <a href="#"> Reservation/Contact </a></li>
+</ul>
+
+ </nav>
+ 
+<section>
+     
+                           <h1 class="titre">livre d'or</h1>
+
+           <p> Les avis et suggestions de nos clients seront toujours les bienvenus sur cette page </p>
+
+            <form  method="post" class="fomul"  method="post" name="livredor">
+         
+                  
+                    <input type="text" name="c1" required="true" placeholder="Entre votre Nom" />
+                    <br>
+                    
+                    
+                    <input type="email" name="c2" required="true" placeholder=" Entrer votre Email"/>
+                    <br>
+                    
+                    <input type="text" name="c3" required="true" placeholder=" Entrer votre numéro de téléphone"/>
+   <p>
+        
+       <label for="livre"> Donnez-nous votre avis!! </label>
+       <br/>
+       
+       <textarea name="livre"  rows="150" cols="125">
+       
+       </textarea>       
+  </p>
+                 <p><button id="okButton" type="submit" value="display" onclick="display();">Envoyer le message</button> </p>
+</form>
+</section>
+
+    	
+<footer>
+		
+      <p> adresse mail de notre société: <a href="fabriquedupetitmangé@neuf.fr"> fabriquedupetitmangé@neuf.fr </a> </p>
+      <p> Rappel: L'ABUS d'ALCOOL es DANGEREUX pour la SANTE </p>
+      <p>&copy;-DROIT RESERVE- Lafabriquedupetitmangé -</p>
+      <p> Nous sommes présents sur :
+              <img src="https://yogalifewestindies.com/wp-content/uploads/2017/09/Facebook-logo.png" width="70px" height="70px"> 
+              <img src="https://www.optimize360.fr/wp-content/uploads/2018/10/Logo-Tripadvisor.png"width="70px" height="70px">
+              <img src="https://www.ladn.eu/wp-content/uploads/2016/09/white_background.jpeg-752x440.jpg"width="70px" height="70px">
+              <img src="https://image.flaticon.com/icons/png/512/23/23931.png" width="70px"height="70px">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ba/25/60/assiette-et-fourchette.jpg" width="70px" height="70px">
+      </p>
+</footer>
+    	</div>

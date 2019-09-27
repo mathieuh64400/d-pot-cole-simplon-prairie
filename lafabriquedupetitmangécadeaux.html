@@ -1,0 +1,106 @@
+<DOCTYPE html>
+<html><head>
+        <meta charset="utf-8" />
+        <title> Coffret Cadeaux</title> <head>
+    </head>
+    <link rel="stylesheet"  href="simplon.css">
+    
+    <body>
+    	<div id="Page">
+            <header>
+                  <img src="https://lepetitjournal.com/sites/default/files/styles/main_article/public/2019-03/VegNewsGordonRamsay3.png?itok=97yLf3tv"class="morg">	 
+                  <h1> <strong>Mister Cuistot  <br>
+                  - la Fabrique du petit mangé-</strong></h1>
+    			     <p> 
+
+    					<label for="Langue"> Langue:</label>
+    					<select name="pays" id="pays">
+    					<option value="Français"> Français</option>
+    					<option value="Anglais">Anglais</option>
+    					</select>        
+    				</p>
+
+    		 </header>
+ <nav> 
+                <ul id="menu">
+                   <li><a href="#">Acceuil</a> </li>
+                   <li><a href="Menu">Menu</a>
+                       <ul> <li><a href="#">Le chef</a></li>
+                            <li><a href="#"> La recette</a></li>
+                            <li><a href="#">les plats du jour</a></li>
+                       </ul>
+                       </li>
+                    <li><a href="#"> Carte des Vins</a>
+                      <ul>
+                         <li><a href="#"> Jurançon</a></li>
+                         <li><a href="#"> Madiran</a></li>
+                         <li><a href="#"> Bellocq</a></li>
+                         <li><a href="#"> Vin des Sables</a></li>
+                      </ul>
+                   </li>
+                      <li><a href="#">Coffrets cadeaux</a> </li>
+                   <li><a href="#"> Livre d'Or</a> </li>
+                   <li><a href="#">Nos partenaires</a> </li>
+                    <li> <a href="#"> Reservation/Contact/</a></li>
+                </ul>
+
+ </nav>
+<section>
+	<div> <img src="http://www.taxiabc.fr/bQ5KHLNAeQ/cadeau-4.jpg"class="cad" width="200px"height="200px"align="right"></div>
+
+<h1>Coffret cadeaux:</h1>
+<h2> Offrez: un moment de plaisir inoubliable!</h2>
+<p class="off"> c'est <strong> Simple </strong> <strong>facile</strong> <strong>rapide</strong> 
+ Choissisez parmi nos offres:</p> <br>
+ <div>
+ 	<p class="lo"> <strong>Menu Love:</strong> Menu Aspe + cocktail de l'Amour 45€ (A)</p><br>
+ 	<p class="G"><strong>Menu Gourmand:</strong> Composé votre menu en choississant vous-même les plats à servir 55€ (B)</p><br>
+ 	<P class="Sur"><strong> Menu Surprise:</strong> Plat inédit pas encore dans les menus 39€(C)</p><br>
+ 	<p class="Pla"> <strong>Menu Plaisir:</strong> Menu Osseau+ accompagnement 49€ (D)</p><br>
+ </div>
+
+ <div id="choix">
+ 	<Strong>Sélectionnez votre Cadeau:<Strong><br>
+ 	<form method="post" action="traitement.php">
+   <textarea name="livre" id="livre" rows="10" cols="50">
+    Si vous souhaitez une décoration particulière ou une présentation original veuillez la précisez ici
+   </textarea>  
+    </form>          
+ 		<fieldset>
+      <form action="post" action="traitement.php">
+    					<select name="Heures" id="Heures">
+    					<option value="midi"> 12h30-14h30</option>
+                        <option value="soir">19h30-21h30</option>
+                        </select>
+                        <select name="Ofm" id="Ofm">
+                        <option value="cadeau"> menuA </option>
+                        <option value=" cadeau"> menue B</option>
+                        <option value=" cadeau"> menu c</option>
+                        <option value="cadeau"> menu d</option>
+                        </select>   <br>  
+
+ 		 <label for="email">Quel est votre adresse mail ?</label><br>
+         <input type="email" name="email" id="email"/>
+         <input type="submit" value="Envoyer">
+         </fieldset>
+ 	</form>
+
+</section>
+
+<footer>
+		
+      <p> adresse mail de notre société: <a href="fabriquedupetitmangé@neuf.fr"> fabriquedupetitmangé@neuf.fr </a> </p>
+      <p> Rappel: L'ABUS d'ALCOOL es DANGEREUX pour la SANTE </p>
+      <p>&copy;-DROIT RESERVE- Lafabriquedupetitmangé -</p>
+      <p> Nous sommes présents sur :
+              <img src="https://yogalifewestindies.com/wp-content/uploads/2017/09/Facebook-logo.png" width="70px" height="70px"> 
+              <img src="https://www.optimize360.fr/wp-content/uploads/2018/10/Logo-Tripadvisor.png"width="70px" height="70px">
+              <img src="https://www.ladn.eu/wp-content/uploads/2016/09/white_background.jpeg-752x440.jpg"width="70px" height="70px">
+              <img src="https://image.flaticon.com/icons/png/512/23/23931.png" width="70px"height="70px">
+              <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ba/25/60/assiette-et-fourchette.jpg" width="70px" height="70px">
+      </p>
+</footer>
+
+    	</div>
+   
+    </body>

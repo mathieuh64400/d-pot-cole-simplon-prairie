@@ -1,0 +1,190 @@
+<DOCTYPE html>
+<html> <head>
+        <meta charset="utf-8" />
+        <title> Reservation </title>
+    </head>
+    <link rel="stylesheet"  href="simplon.css">
+    <script type="text/javascript">
+        function adjust_textarea(h) {
+            h.style.height = "20px";
+            h.style.height = (h.scrollHeight)+"px";
+        }
+        </script>
+    <body>
+    	<div id="Page">
+                <header>
+                        <img src="https://lepetitjournal.com/sites/default/files/styles/main_article/public/2019-03/VegNewsGordonRamsay3.png?itok=97yLf3tv"class="morg">	 
+                        <h1> <strong>Mister Cuistot  <br>
+                        - la Fabrique du petit mangé-</strong></h1>
+
+    					<label for="Langue"> Langue:</label>
+    					<select name="pays" id="pays">
+    					<option value="Français"> Français</option>
+    					<option value="Anglais">Anglais</option>
+    					</select>        
+    				</p>
+             </header>
+             
+         <nav>  
+              <ul id="menu">
+                    <li><a href="#">Acceuil</a> </li>
+                    <li><a href="Menu">Menu</a>
+                        <ul> <li><a href="#">Le chef</a></li>
+                             <li><a href="#"> La recette</a></li>
+                             <li><a href="#">les plats du jour</a></li>
+                        </ul>
+                        </li>
+                     <li><a href="#"> Carte des Vins</a>
+                       <ul>
+                          <li><a href="#"> Jurançon</a></li>
+                          <li><a href="#"> Madiran</a></li>
+                          <li><a href="#"> Bellocq</a></li>
+                          <li><a href="#"> Vin des Sables</a></li>
+                       </ul>
+                    </li>
+                       <li><a href="#">Coffrets cadeaux</a> </li>
+                    <li><a href="#"> Livre d'Or</a> </li>
+                    <li><a href="#">Nos partenaires</a> </li>
+                     <li> <a href="#"> Reservation/Contact/</a></li>
+                 </ul>
+         </nav>
+ 
+
+ <section>
+ 
+ 	<div class="gps">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2903.923319760356!2d-0.3561124842307466!3d43.29492748354127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5648e0d47a6f93%3A0x7e9856727d656551!2s2%20Avenue%20Nitot%2C%2064000%20Pau!5e0!3m2!1sfr!2sfr!4v1569152713423!5m2!1sfr!2sfr" width="400" height="375" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</div> <br><br><br><br><br><br><br><br><br><br><br>
+		 	<div class="rappel">
+  			<strong>Localisation</strong><br>
+  			12 Rue Henri Wallace, 64000 Pau<br>
+  			<italic>Tel:</italic> +5-59-39-?-?
+         </div>
+         <br><br><br><br><br><br>
+
+ <div>
+        <form class="inf"  method="post" action="reservation.php">
+
+                <label for="field1">
+                <span>Entrer votre Nom</span>
+                <input type="text" name="field1" required="true" placeholder="Nom"/>
+                </label><br>
+                
+                <label for="field2">
+                <span>Email </span>
+                <input type="email" name="field2" required="true" placeholder="Email"/>
+                </label><br>
+                
+                <label for="field3">
+                <span> Numéro de Téléphone</span>
+                <input type="text" name="field3" required="true" placeholder="téléphone"/>
+                </label><br>
+               
+                <label for="adresse">
+                <span>votre adresse?</span>
+                 <input type="text" id="adresse" name="adresse" placeholder="adresse"required="true"/></label>
+                 <br>
+
+                <label for="field4">
+                <span>Demande particulière</span>
+                <textarea name="field4" onkeyup="adjust_textarea" required="true"placeholder="Demande"></textarea>
+                </label><br>
+
+                 <label for="date">
+                  <span> Date de Réservation</span> 
+                           <select name="jour" id="jour">
+                                <option value="jour">1</option>
+                                <option value="jour">2</option>
+                                <option value="jour">3</option>
+                                <option value="jour">4</option>
+                                <option value="jour">5</option> 
+                                <option value="jour">6</option>
+                                <option value="jour">7</option>
+                                <option value="jour">8</option>
+                                <option value="jour">9</option>
+                                <option value="jour"> 10</option>
+                                <option value="jour"> 11</option>
+                                <option value="jour"> 12</option>
+                                <option value="jour"> 13</option>
+                                <option value="jour"> 14</option>
+                                <option value="jour"> 15</option>
+                                <option value="jour"> 16</option>
+                                <option value="jour"> 17</option>
+                                <option value="jour"> 18</option>
+                                <option value="jour"> 19</option>
+                                <option value="jour"> 20</option>
+                                <option value="jour"> 21</option>
+                                <option value="jour"> 22</option>
+                                <option value="jour"> 23</option>
+                                <option value="jour"> 24</option>
+                                <option value="jour"> 25</option>
+                                <option value="jour"> 26</option>
+                                <option value="jour"> 27</option>
+                                <option value="jour"> 28</option>
+                                <option value="jour"> 29</option>
+                                <option value="jour"> 30</option>
+                                <option value="jour"> 31</option>
+                            </select>  
+                                 <select name="mois" id="mois">
+                                     <option value="mois"> Janvier</option>
+                                     <option value="jour"> février</option>
+                                     <option value="jour"> Mars</option>
+                                     <option value="jour"> Avril</option>
+                                     <option value="jour"> Mai</option>
+                                     <option value="jour"> Juin</option>
+                                     <option value="jour"> Juillet</option>
+                                     <option value="jour"> Aout</option>
+                                     <option value="jour"> Septembre</option>
+                                     <option value="jours">Octobre</option>
+                                     <option value="mois">Novembre</option>
+                                     <option value="mois">Décembre</option>
+                                 </select>
+                            </label>
+
+                   
+                    <label for="acceptTerms"> J'accepte les <a>Termes et Conditions</a> formulées par notre équipe.
+                     <input id="acceptTerms" type="checkbox" name="acceptTerms"/>
+                    </label><br>
+
+                <label>
+                <span>envoyer</span>
+                <input type="submit" value="envoyer" />
+                </label>
+                <label>
+                <span>réinitialiser</span>
+                <input type="reset" value="réinitialiser" required="true"/>
+                </label>
+                
+                </form> 
+            </div> <br><br>
+
+ <div class="supp">
+        <strong>Horaire d'Ouverture</strong> <br>
+                 12H30-14H30<br>
+                 19H30-22H30<br>
+         <strong> Nos congés annuels sont du: <br> 12 Septembre au 20 septembre</strong>
+       
+    </div><br><br>
+ <div class="service">  <strong> Les services du midi se font entre 12H30-13H30 et du soir se font entre 20h00 et 21h00</strong>   </div>
+</section><br><br>
+
+    	<footer>
+		
+                        <p> adresse mail de notre société: <a href="fabriquedupetitmangé@neuf.fr"> fabriquedupetitmangé@neuf.fr </a> </p>
+                        <p> Rappel: L'ABUS d'ALCOOL es DANGEREUX pour la SANTE </p>
+                        <p>&copy;-DROIT RESERVE- Lafabriquedupetitmangé -</p>
+                        <p> Nous sommes présents sur :
+                                <img src="https://yogalifewestindies.com/wp-content/uploads/2017/09/Facebook-logo.png" width="70px" height="70px"> 
+                                <img src="https://www.optimize360.fr/wp-content/uploads/2018/10/Logo-Tripadvisor.png"width="70px" height="70px">
+                                <img src="https://www.ladn.eu/wp-content/uploads/2016/09/white_background.jpeg-752x440.jpg"width="70px" height="70px">
+                                <img src="https://image.flaticon.com/icons/png/512/23/23931.png" width="70px"height="70px">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/ba/25/60/assiette-et-fourchette.jpg" width="70px" height="70px">
+                        </p>
+		</footer>
+    	</div>
+   
+    </body>
+
+  </html>
+
+   
